@@ -197,7 +197,7 @@ Different styles are intentional.
 
 ## 3. Keep your room mostly self-contained.
 
-Use your own folder whenever possible.
+Use your own folder & unique username whenever possible (the first username is mine).
 
 Example:
 
@@ -205,13 +205,13 @@ Example:
 /
 ├── index.html
 ├── pages/
-│   ├── room-001/
+│   ├── room-001-popcorn150/
 │   │   ├── index.html
 │   │   ├── style.css
 │   │   ├── script.js
 │   │   └── assets/
 │   │
-│   ├── room-002/
+│   ├── room-002-[username]/
 │   │   ├── index.html
 │   │   ├── style.css
 │   │   ├── script.js
