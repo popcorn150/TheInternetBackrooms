@@ -121,6 +121,16 @@ Nobody knows what this project will eventually become.
 
 That is the point.
 
+The shared waiting page lives in `waiting-room/`. It is the 404-style page for **any** room that has not been built yet. It also contains a tiny dinosaur that is taking a break from running.
+
+If your room leads to an unbuilt room, point your exit to the shared page with the next room number. For a room inside `pages/`, the destination looks like this:
+
+```text
+../../waiting-room/index.html?room=003
+```
+
+The `room` number sets the URL shown on the waiting page. When that room is built, update the outgoing destination to the new room's `index.html`. Keep the waiting page itself shared and unchanged; contributors only need to update their own room's navigation. Coordinate with the previous room's creator or a maintainer when a link in their room needs updating. Keep the way visitors discover each exit a secret.
+
 ---
 
 # 👨‍💻 Who Can Contribute?
@@ -197,21 +207,25 @@ Different styles are intentional.
 
 ## 3. Keep your room mostly self-contained.
 
-Use your own folder whenever possible.
+Use your own folder & unique username whenever possible (the first username is mine).
 
 Example:
 
 ```text
 /
 ├── index.html
+├── waiting-room/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
 ├── pages/
-│   ├── room-001/
+│   ├── room-001-popcorn150/
 │   │   ├── index.html
 │   │   ├── style.css
 │   │   ├── script.js
 │   │   └── assets/
 │   │
-│   ├── room-002/
+│   ├── room-002-[username]/
 │   │   ├── index.html
 │   │   ├── style.css
 │   │   ├── script.js

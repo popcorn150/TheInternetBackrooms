@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Room 001 — The Internet Backrooms</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="desktop" aria-label="Old computer desktop">
+    <div class="wallpaper-mark" aria-hidden="true">1998</div>
+    <div class="desktop-icons">
+      <button class="desktop-icon" id="browser-icon" type="button" aria-label="Open the Internet browser">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="25" fill="#4285ad" stroke="#173b68" stroke-width="2"/><path d="M8 35h48M32 7c-9 8-13 17-13 25s4 18 13 25c9-7 13-17 13-25S41 15 32 7Z" fill="none" stroke="#d8f0ff" stroke-width="3"/><path d="M12 19h40M12 45h40" stroke="#d8f0ff" stroke-width="2"/><path d="M4 49c10-2 23-8 38-20" fill="none" stroke="#efc342" stroke-width="5" stroke-linecap="round"/></svg>
+        <span>Internet</span>
+      </button>
+      <button class="desktop-icon" id="exit-icon" type="button" aria-label="Open Exit folder">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M5 15h23l6 7h25v30H5Z" fill="#bb8b24" stroke="#573b0d" stroke-width="2"/><path d="M5 25h54l-5 29H10Z" fill="#f3cf5a" stroke="#795415" stroke-width="2"/><path d="M12 32h37" stroke="#ffeb9c" stroke-width="2"/></svg>
+        <span>Exit</span>
+      </button>
+      <div class="decorative-object">
+        <button class="desktop-icon decoration" id="computer-icon" type="button" aria-label="My Computer" data-decorative-icon>
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M16 13h33v38H16Z" fill="#d9dad7" stroke="#353535" stroke-width="2"/><path d="M20 18h24v17H20Z" fill="#26394a"/><path d="M24 43h17" stroke="#777" stroke-width="3"/></svg>
+          <span>My Computer</span>
+        </button>
+        <span class="speech-bubble" role="status" hidden></span>
+      </div>
+      <div class="decorative-object">
+        <button class="desktop-icon decoration" id="recycle-icon" type="button" aria-label="Recycle Bin" data-decorative-icon>
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M16 19h33l-3 35H19Z" fill="#b6bdbb" stroke="#343a39" stroke-width="2"/><path d="M13 15h39v7H13Z" fill="#dee4e0" stroke="#343a39" stroke-width="2"/><path d="M25 11h15" stroke="#343a39" stroke-width="3"/></svg>
+          <span>Recycle Bin</span>
+        </button>
+        <span class="speech-bubble" role="status" hidden></span>
+      </div>
+    </div>
+
+    <div class="desktop-sticker" aria-hidden="true">PLEASE DO NOT<br>TURN OFF THE COMPUTER</div>
+
+    <section class="window browser-window" id="browser-window" aria-label="Internet browser" hidden>
+      <div class="title-bar" id="browser-title-bar">
+        <span class="title-label"><span aria-hidden="true">🌐</span> The Web — Internet Explorer</span>
+        <button class="window-close" id="browser-close" type="button" aria-label="Close browser">×</button>
+      </div>
+      <div class="menu-bar" aria-hidden="true"><span>File</span><span>Edit</span><span>View</span><span>Favorites</span><span>Help</span></div>
+      <div class="address-bar"><span>Address</span><div>http://www.computer-archive.net/history/windows.html</div><span aria-hidden="true">Go</span></div>
+      <div class="browser-content">
+        <article class="archive-page">
+          <header>
+            <div class="archive-topline">THE COMPUTER ARCHIVE <span>est. 1997</span></div>
+            <h1>A Brief History of Personal Computing</h1>
+            <p class="archive-nav"><a href="#early-machines">Early machines</a> | <a href="#home-computer">The home computer</a> | <a href="#desktop-years">Desktop years</a></p>
+          </header>
+          <p><em>Last updated: November 17, 1999.</em> Welcome to the Computer Archive. This page collects notes about machines, software, and the curious way they came to live on so many desks.</p>
+          <h2 id="early-machines">Early machines</h2>
+          <p>Computers once filled rooms and demanded teams of operators. A program might arrive on punched cards. Results came back on paper, sometimes hours later. The idea of keeping one beside your telephone would have sounded extravagant.</p>
+          <p>Smaller components changed the scale of computing. Transistors replaced bulky vacuum tubes, integrated circuits packed many components together, and microprocessors placed a central processor onto a chip. Each step moved computers closer to ordinary people.</p>
+          <h2 id="home-computer">The home computer</h2>
+          <p>By the late 1970s and early 1980s, hobbyists could buy computers for a desk at home. Many started with a blinking prompt. Owners typed commands, saved work to tapes or floppy disks, and learned quickly to keep a spare copy.</p>
+          <p>Home machines did more than calculate. People wrote letters, kept records, drew pictures, played games, and called distant bulletin boards over noisy telephone lines. A computer became a place to explore.</p>
+          <p>Graphical interfaces introduced windows, icons, menus, and a pointer. They gave files a visual home and made common tasks easier to discover. The desktop metaphor stuck, even when the computer itself no longer sat on a desk.</p>
+          <h2 id="desktop-years">The desktop years</h2>
+          <p class="article-paragraph">In the year <label class="visually-hidden" for="answer">Missing year in the article</label><input id="answer" name="answer" type="text" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="____">, personal computers became familiar fixtures in schools and offices. Start-up sounds, crowded desktops, screen savers, and mysterious error messages were part of everyday computing. It was a busy time for operating systems and for the growing World Wide Web.</p>
+          <p>Browsers opened a new kind of window. A page could link to another page across the world. Some sites offered useful research; others had animated construction signs, visitor counters, and an impressive number of underlined blue links.</p>
+          <p>Software arrived on stacks of disks, then shiny discs. Installing it was sometimes an adventure of its own. A fast modem made the web feel almost instantaneous, provided nobody needed to use the phone.</p>
+          <p>The names and dates of old systems are easy to muddle together. A machine may have been manufactured in one year, sold widely in another, and remembered for a later update. Archives help keep the record straight.</p>
+          <p>Thank you for visiting the Computer Archive. We hope these notes are useful. Please remember to sign the guestbook on your way out, if you ever find it.</p>
+          <footer><a href="#">Back to top</a> · © 1999 Computer Archive</footer>
+        </article>
+      </div>
+      <div class="status-bar"><span>Done</span><span>Internet zone</span></div>
+    </section>
+
+    <div class="dialog-backdrop" id="dialog-backdrop" hidden>
+      <section class="window system-dialog" role="alertdialog" aria-modal="true" aria-labelledby="dialog-title" aria-describedby="dialog-message">
+        <div class="title-bar"><span id="dialog-title">System message</span><button class="window-close" id="dialog-close" type="button" aria-label="Close message">×</button></div>
+        <div class="dialog-body"><span class="dialog-symbol" aria-hidden="true">!</span><p id="dialog-message"></p></div>
+        <div class="dialog-actions"><button id="dialog-ok" type="button">OK</button></div>
+      </section>
+    </div>
+
+    <div class="taskbar" aria-hidden="true"><span class="start-button"><span class="start-mark">▦</span> Start</span><span class="task-divider"></span><span class="task-label" id="task-label">The desktop</span><span class="clock" id="clock">&nbsp;</span></div>
+  </main>
+</body>
+</html>

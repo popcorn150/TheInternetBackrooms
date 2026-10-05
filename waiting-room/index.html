@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Room not found</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <svg class="globe" viewBox="0 0 32 32" aria-hidden="true">
+      <circle cx="16" cy="16" r="12"></circle>
+      <path d="M4 16h24M16 4c-4 4-6 8-6 12s2 8 6 12M16 4c4 4 6 8 6 12s-2 8-6 12M6.5 9h19M6.5 23h19"></path>
+    </svg>
+    <h1>Room not found</h1>
+    <p class="error-code">404 · ERR_ROOM_NOT_FOUND (<span id="room-number">002</span>)</p>
+    <p class="address"><strong>URL:</strong> <code id="room-url">/pages/room-002/</code></p>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <h2>This place doesn't exist yet.</h2>
+    <p>You've reached the edge of the maze.</p>
+    <p class="contribute">Want to bring it to life? <a href="https://github.com/popcorn150/TheInternetBackrooms#how-to-contribute">See how to contribute</a>.</p>
+    <p class="footnote">The next room is waiting for its creator.</p>
+
+    <section class="game" aria-labelledby="game-heading">
+      <h2 id="game-heading">Play a game while you wait?</h2>
+      <div class="runner-stage">
+        <div class="dinosaur">
+          <svg viewBox="0 0 52 52" aria-hidden="true">
+            <g fill="currentColor">
+              <path d="M20 3h20v4h4v13H32v4h-5v7h-4v5h-4v5H9v-4H5v-5H2v-4h7v3h4V20h7Z"></path>
+              <path d="M14 38h6v10h-6zm14-2h6v12h-6zm5-13h7v4h-7z"></path>
+            </g>
+            <path d="M35 8h3v3h-3z" fill="#111213"></path>
+          </svg>
+          <span class="dino-bubble" id="dino-bubble" role="status" aria-live="polite" hidden></span>
+        </div>
+        <svg class="cactus" viewBox="0 0 38 52" aria-hidden="true">
+          <path d="M15 5h8v42h-8zm-9 14h6v14h7v6H9V35H6zm20-6h6v19h-9v-6h3z" fill="currentColor"></path>
+        </svg>
+        <div class="ground" aria-hidden="true"></div>
+      </div>
+      <button id="play-button" type="button">▶ Play</button>
+    </section>
+  </main>
+</body>
+</html>
