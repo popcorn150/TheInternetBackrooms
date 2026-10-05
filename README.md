@@ -143,6 +143,8 @@ For local file previews and other static hosts, add the shared guard near the to
 
 That path works for a room at `pages/room-NNN-username/index.html`. Adjust it if your room is nested differently. Keep the `desktop-only/` notice and guard shared; each creator only adds the script reference in their own room.
 
+The shared site icon is `assets/backroomsLogo.png`. A room inside `pages/room-NNN-username/` can use it with `<link rel="icon" type="image/png" href="../../assets/backroomsLogo.png">` in its `<head>`.
+
 ## Hosting on Netlify
 
 Connect this GitHub repository to Netlify, choose `main` as the production branch, leave the build command empty, and publish the repository root (`.`). The root `netlify.toml` sets the publish directory. With Git-connected continuous deployment, a merge or push to `main` publishes the new files automatically. A new room also needs an incoming room's exit link updated to point to its `index.html`; adding the folder alone does not connect it to the maze.
@@ -230,6 +232,8 @@ Example:
 ```text
 /
 ├── index.html
+├── assets/
+│   └── backroomsLogo.png
 ├── netlify.toml
 ├── desktop-only/
 │   ├── index.html
