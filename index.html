@@ -3,8 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=pages/room-001-popcorn150/index.html">
   <title>The Internet Backrooms</title>
+  <script src="desktop-only/guard.js"></script>
+  <script>
+    if (!window.backroomsMobileBlocked) {
+      window.location.replace('pages/room-001-popcorn150/index.html');
+    }
+  </script>
 </head>
 <body>
   <p><a href="pages/room-001-popcorn150/index.html">Enter the maze</a></p>

@@ -131,6 +131,22 @@ If your room leads to an unbuilt room, point your exit to the shared page with t
 
 The `room` number sets the URL shown on the waiting page. When that room is built, update the outgoing destination to the new room's `index.html`. Keep the waiting page itself shared and unchanged; contributors only need to update their own room's navigation. Coordinate with the previous room's creator or a maintainer when a link in their room needs updating. Keep the way visitors discover each exit a secret.
 
+## Desktop viewing
+
+The site sends small or touch-only screens to the shared notice in `desktop-only/`. On Netlify, `netlify/edge-functions/mobile-gate.js` also redirects recognized mobile devices before a room is served. This applies to future rooms too.
+
+For local file previews and other static hosts, add the shared guard near the top of each new room's `<head>`, before its stylesheet or room script:
+
+```html
+<script src="../../desktop-only/guard.js"></script>
+```
+
+That path works for a room at `pages/room-NNN-username/index.html`. Adjust it if your room is nested differently. Keep the `desktop-only/` notice and guard shared; each creator only adds the script reference in their own room.
+
+## Hosting on Netlify
+
+Connect this GitHub repository to Netlify, choose `main` as the production branch, leave the build command empty, and publish the repository root (`.`). The root `netlify.toml` sets the publish directory. With Git-connected continuous deployment, a merge or push to `main` publishes the new files automatically. A new room also needs an incoming room's exit link updated to point to its `index.html`; adding the folder alone does not connect it to the maze.
+
 ---
 
 # 👨‍💻 Who Can Contribute?
@@ -214,6 +230,11 @@ Example:
 ```text
 /
 ├── index.html
+├── netlify.toml
+├── desktop-only/
+│   ├── index.html
+│   ├── style.css
+│   └── guard.js
 ├── waiting-room/
 │   ├── index.html
 │   ├── style.css
